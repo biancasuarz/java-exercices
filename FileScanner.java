@@ -12,11 +12,15 @@ public class Program {
 			sc = new Scanner(file);
 			while (sc.hasNextLine()) {
 			System.out.println(sc.nextLine());
-		}
-			sc.close();
+			}
 		}	
 		catch (IOException e) {
 			System.out.println("Error: " + e.getMessage());
 		}
-	}
+		finally {
+			if (sc != null){
+			sc.close();
+			}
+		}
+	}		
 }
