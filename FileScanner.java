@@ -13,5 +13,10 @@ public class Program {
 			while (sc.hasNextLine()) {
 			System.out.println(sc.nextLine());
 		}
+			sc.close();
+		}	
+		catch (IOException e) {
+			System.out.println("Error: " + e.getMessage());
+		}
 	}
 }
