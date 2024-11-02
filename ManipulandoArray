@@ -19,6 +19,8 @@ public class ManipulandoArray {
         System.out.println(Collections.min(notas));
         System.out.println(Collections.max(notas, Collections.reverseOrder()));
         System.out.println(Collections.min(notas, Collections.reverseOrder()));
+        System.out.println("Possui nota 7? " + notas.contains(7.0)); //true or false
+        System.out.println("Possui nota 11? " + notas.contains(11.0));
 
     }
 }
